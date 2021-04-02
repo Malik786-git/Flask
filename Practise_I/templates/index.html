@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+
+{% block Heading %}  Enter MARKS  {% endblock %}
+
+{% block body %}
+     <form action="{{ url_for('result') }}" method="POST">
+
+       Physics : 
+       <input type="number" name="phy" placeholder="marks">
+       
+       Calculus : 
+       <input type="number" name="cal" placeholder="marks">
+       
+       Islamit : 
+       <input type="number" name="isl" placeholder="marks">
+
+       <button>Submit</button>
+     </form>
+
+
+
+ {% endblock %}
